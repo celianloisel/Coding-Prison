@@ -25,6 +25,15 @@ public class PNJController : MonoBehaviour
         {
             Vector2 targetPosition = waypoints[currentWaypointIndex].position;
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            
+            if (targetPosition.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
 
             if (new Vector2(transform.position.x, transform.position.y) == targetPosition)
             {
