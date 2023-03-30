@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartCinematic.unity
     guid: 9b63e835e3606ac479cdce1fc9294837
+  - enabled: 1
+    path: Assets/Scenes/Map/Cell.unity
+    guid: fd2ab1164062c1346942d6b3ee903c51
+  - enabled: 1
+    path: Assets/Scenes/Map/Canteen.unity
+    guid: 478c5922e8ae89f4cba796e437aa63f5
+  - enabled: 1
+    path: Assets/Scenes/Map/Prison Yard.unity
+    guid: 3a7a39e3cbcfe5c498f8c894e20f12c2
   m_configObjects: {}
