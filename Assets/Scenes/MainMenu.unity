@@ -464,7 +464,6 @@ GameObject:
   m_Component:
   - component: {fileID: 235339090}
   - component: {fileID: 235339092}
-  - component: {fileID: 235339093}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -558,20 +557,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &235339093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235339089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508b00ae8d818c540822ff66dded9439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  resolutionDropdown: {fileID: 0}
 --- !u!1 &282228812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1229,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386199156}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: SettingsButton
         m_Mode: 1
@@ -1378,7 +1363,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386199156}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: CloseSettingWindow
         m_Mode: 1
@@ -1992,7 +1977,6 @@ GameObject:
   - component: {fileID: 1386199153}
   - component: {fileID: 1386199152}
   - component: {fileID: 1386199151}
-  - component: {fileID: 1386199150}
   - component: {fileID: 1386199156}
   m_Layer: 5
   m_Name: Canvas
@@ -2001,18 +1985,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1386199150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386199149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6c877d901bef94f9c8da116c45d03b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1386199151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,11 +2080,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386199149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79108756958b09948a44eea6a2f9ce63, type: 3}
+  m_Script: {fileID: 11500000, guid: c10b6ad9cbed1d045a17c73bb000387b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: 
-  settingswindow: {fileID: 0}
+  levelToLoad: StartCinematic
+  settingswindow: {fileID: 1955976012}
 --- !u!1 &1396691420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,7 +2439,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386199156}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -3057,7 +3029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386199156}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -3243,8 +3215,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c335195ae6ab3a04ca5d18c5f482ce3f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: c335195ae6ab3a04ca5d18c5f482ce3f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3378,8 +3350,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c335195ae6ab3a04ca5d18c5f482ce3f, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: c335195ae6ab3a04ca5d18c5f482ce3f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3577,7 +3549,6 @@ GameObject:
   - component: {fileID: 1955976013}
   - component: {fileID: 1955976016}
   - component: {fileID: 1955976015}
-  - component: {fileID: 1955976017}
   m_Layer: 5
   m_Name: SettingsWindow
   m_TagString: Untagged
@@ -3650,20 +3621,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955976012}
   m_CullTransparentMesh: 1
---- !u!114 &1955976017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955976012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508b00ae8d818c540822ff66dded9439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  resolutionDropdown: {fileID: 0}
 --- !u!1 &2010546137
 GameObject:
   m_ObjectHideFlags: 0
