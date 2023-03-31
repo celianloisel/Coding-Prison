@@ -23,8 +23,9 @@ public class PlayerController : MonoBehaviour
         _movement.y = Input.GetAxis("Vertical");
         _rigBod.MovePosition(_rigBod.position + _movement * m_MoveSpeed * Time.fixedDeltaTime);
 
-        float characterVelocity = Mathf.Abs(_movement.x);
+        float characterVelocity = Mathf.Abs(_movement.magnitude);
         animator.SetFloat("Speed", characterVelocity);
+
 
     }
 }
