@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigBod = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,9 +23,8 @@ public class PlayerController : MonoBehaviour
         _movement.y = Input.GetAxis("Vertical");
         _rigBod.MovePosition(_rigBod.position + _movement * m_MoveSpeed * Time.fixedDeltaTime);
 
-        float characterVelocity = Mathf.Abs(_rigBod.velocity.x);
+        float characterVelocity = Mathf.Abs(_movement.x);
         animator.SetFloat("Speed", characterVelocity);
-
 
     }
 }
