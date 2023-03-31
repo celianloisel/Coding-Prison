@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Map/Cell.unity
     guid: fd2ab1164062c1346942d6b3ee903c51
   - enabled: 1
+    path: Assets/Scenes/StartCinematicWc.unity
+    guid: 9829ac758d58cfa4290faede7d0b0a49
+  - enabled: 1
     path: Assets/Scenes/Map/Canteen.unity
     guid: 478c5922e8ae89f4cba796e437aa63f5
   - enabled: 1
