@@ -276,6 +276,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3741658896026163182}
   - component: {fileID: 8133729744238361182}
+  - component: {fileID: 8313587722204244161}
+  - component: {fileID: 5899582849864911309}
   m_Layer: 0
   m_Name: lamp_basic
   m_TagString: Untagged
@@ -468,6 +470,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a49ec4b96c64272458472313b7038cf5, type: 3}
+--- !u!60 &8313587722204244161
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050215326394407607}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0.5}
+    oldSize: {x: 8.61, y: 6.8}
+    newSize: {x: 8.61, y: 6.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5.2562003, y: 2.3412306}
+      - {x: -0.004085064, y: 0.22569752}
+      - {x: -0.066449165, y: 0.015146494}
+      - {x: -0.06846142, y: -0.16895652}
+      - {x: 5.26954, y: -2.2903817}
+--- !u!114 &5899582849864911309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050215326394407607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c4e0221ff541899f62f48c640e73a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &755055795763300126
 PrefabInstance:
   m_ObjectHideFlags: 0
