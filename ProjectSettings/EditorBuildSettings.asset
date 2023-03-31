@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartCinematicJ.unity
     guid: 0389f6e81a6aa474ea857c03db33cbe5
+  - enabled: 1
+    path: Assets/Scenes/Map/Prison Yard 2.unity
+    guid: 1cc4c4e74d9167442af264f01b0bc5e4
   m_configObjects: {}
