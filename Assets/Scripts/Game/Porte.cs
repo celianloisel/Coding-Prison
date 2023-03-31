@@ -9,7 +9,7 @@ namespace Game
     {
         
         public string levelToLoad;
-        public bool porte = true;
+        public bool porte = false;
         private void Update()
         {
             if (GameObject.FindGameObjectsWithTag("Stain").Length < 1)
