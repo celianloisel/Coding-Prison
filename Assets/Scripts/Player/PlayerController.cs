@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rigBod;
-    public Animator animator;
+    // public Animator animator;
     
     [SerializeField]
     private float m_MoveSpeed;
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigBod = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
         _movement.y = Input.GetAxis("Vertical");
         _rigBod.MovePosition(_rigBod.position + _movement * m_MoveSpeed * Time.fixedDeltaTime);
 
-        float characterVelocity = Mathf.Abs(_movement.magnitude);
-        animator.SetFloat("Speed", characterVelocity);
+        // float characterVelocity = Mathf.Abs(_movement.magnitude);
+        // animator.SetFloat("Speed", characterVelocity);
 
 
     }
