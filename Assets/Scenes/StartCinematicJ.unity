@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 880254666}
-  sceneToLoad: Prison Yard
+  sceneToLoad: Prison Yard 2
 --- !u!1 &1546999311
 GameObject:
   m_ObjectHideFlags: 0
