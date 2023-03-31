@@ -3922,7 +3922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d20911229c34992ad01eb17b835de15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: MainMenu
+  levelToLoad: PopGameOver
 --- !u!4 &1750343035
 Transform:
   m_ObjectHideFlags: 0
@@ -6295,6 +6295,10 @@ PrefabInstance:
     - target: {fileID: 3741658897672164988, guid: 8927f2b1569f4ce43b62dba4fe154556, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.1731
+      objectReference: {fileID: 0}
+    - target: {fileID: 5899582849864911309, guid: 8927f2b1569f4ce43b62dba4fe154556, type: 3}
+      propertyPath: sceneToLoad
+      value: PopGamerOver
       objectReference: {fileID: 0}
     - target: {fileID: 8313587722204244161, guid: 8927f2b1569f4ce43b62dba4fe154556, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
