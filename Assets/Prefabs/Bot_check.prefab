@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 6386680437077696089}
   - component: {fileID: 882147450661738296}
   - component: {fileID: 8412564221956024142}
+  - component: {fileID: 8929169109887025548}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -222,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9add046c268475882ef10712a8c07a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 8929169109887025548}
   speed: 3
   waypoints:
   - {fileID: 3741658896362292604}
@@ -470,6 +472,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a49ec4b96c64272458472313b7038cf5, type: 3}
+--- !u!95 &8929169109887025548
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912289749221189984}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 84617b841cc8f894b933516efc026a5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!60 &8313587722204244161
 PolygonCollider2D:
   m_ObjectHideFlags: 0

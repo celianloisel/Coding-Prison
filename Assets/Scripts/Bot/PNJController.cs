@@ -41,7 +41,6 @@ public class PNJController : MonoBehaviour
                 if (currentWaypointIndex == waypoints.Length - 1 && isMovingForward)
                 {
                     isMoving = false;
-
                     StartCoroutine(WaitAtWaypointEnd());
                 }
                 else if (currentWaypointIndex == 0 && !isMovingForward)
