@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Bot
 {
     public class Spot : MonoBehaviour
     {
         private Timer timer;
+        public string sceneToLoad;
 
         void Start()
         {
@@ -14,6 +16,7 @@ namespace Bot
         {
             if (other.CompareTag("Player"))
             {
+                SceneManager.LoadScene(sceneToLoad);
                 Destroy(timer.gameObject);
             }
         }
