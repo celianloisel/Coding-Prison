@@ -4,4 +4,5 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
    public bool pq;
+   public bool bloom;
 }
