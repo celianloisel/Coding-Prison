@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PNJController : MonoBehaviour
 {
+    public Animator animator;
     public float speed;
     public Transform[] waypoints;
     public float waitTime;
@@ -40,6 +41,7 @@ public class PNJController : MonoBehaviour
                 if (currentWaypointIndex == waypoints.Length - 1 && isMovingForward)
                 {
                     isMoving = false;
+
                     StartCoroutine(WaitAtWaypointEnd());
                 }
                 else if (currentWaypointIndex == 0 && !isMovingForward)
@@ -76,8 +78,11 @@ public class PNJController : MonoBehaviour
 
     IEnumerator WaitAtWaypointEnd()
     {
+
+        animator.SetFloat("Speed", 0);
         yield return new WaitForSeconds(isMovingForward ? waitTime : waitTimeEnd);
         isMovingForward = !isMovingForward;
         MoveToNextWaypoint();
+        animator.SetFloat("Speed", 0.4f);
     }
 }
